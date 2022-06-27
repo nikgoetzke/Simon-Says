@@ -1,0 +1,120 @@
+/* style reset  */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+button{
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    outline: inherit;
+}
+body {
+    background-color: rgb(168, 168, 168);
+	line-height: 1;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+h1{
+    font-size: 3em;
+    padding: 1em;
+}
+
+#container{
+    display: grid;
+    grid: 110px 110px / 110px 110px;
+
+    justify-items: center;
+    align-items: center;
+}
+
+/*Dimensions of buttons used to play the game*/
+#container > * {
+    height: 100px;
+    width: 100px;
+
+    transition: width 0.1s, height 0.1s;
+    transition: background-color;
+}
+
+#container > *:hover {
+    height: 105px;
+    width: 105px;
+}
+
+/*Button colors*/
+.top-left{
+    background-color: hsl(133, 100%, 70%);
+}
+.top-left:hover{
+    background-color: hsl(133, 100%, 50%);
+}
+.top-left-active{
+    background-color: hsl(133, 100%, 50%);
+}
+.top-right{
+    background-color: hsl(0, 100%, 70%);
+} 
+
+.top-right:hover{
+    background-color: hsl(0, 100%, 50%);
+}
+.top-right-active{
+    background-color: hsl(0, 100%, 50%);
+}
+.bottom-left{
+    background-color: hsl(60, 100%, 70%);
+}
+
+.bottom-left:hover{
+    background-color: hsl(60, 100%, 50%);
+}
+.bottom-left-active{
+    background-color: hsl(60, 100%, 50%);
+}
+.bottom-right{
+    background-color: hsl(240, 100%, 70%);
+} 
+
+.bottom-right:hover{
+    background-color: hsl(240, 100%, 50%);
+} 
+.bottom-right-active{
+    background-color: hsl(240, 100%, 50%);
+} 
+
+
